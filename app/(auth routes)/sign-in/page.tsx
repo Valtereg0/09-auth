@@ -5,7 +5,7 @@ import { login, UserRequest } from '@/lib/api/clientApi';
 import { useAuthStore } from '@/lib/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
-import css from './signInPage.module.css';
+import css from './SignInPage.module.css';
 
 const SignIn = () => {
   const router = useRouter();
