@@ -3,6 +3,7 @@
 import css from './Header.module.css';
 import Link from 'next/link';
 import TagsMenu from '../TagsMenu/TagsMenu';
+import AuthNavigation from '../AuthNavigation/AuthNavigation';
 
 export default function Header() {
     return (
@@ -12,12 +13,13 @@ export default function Header() {
             </Link>
             <nav aria-label="Main Navigation">
                 <ul className={css.navigation}>
-                    <li>
-                        <Link href="/">Home</Link>
+                    <li className={css.navigationItem}>
+                        <Link className={css.navigationLink} href="/">Home</Link>
                     </li>
-                    <li>
+                    <li className={css.navigationItem}>
                         <TagsMenu />
                     </li>
+                    <AuthNavigation />
                 </ul>
             </nav>
         </header>
